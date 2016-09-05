@@ -28,6 +28,6 @@ def to_roman(n):
             # print('subtracting {0} from input adding {1} to output'.format(integer, numeral))
     return result
 
-
+# 继承内建的 ValueError 异常类，创建自己的异常类 OutOfRangeError
 class OutOfRangeError(ValueError):
     pass

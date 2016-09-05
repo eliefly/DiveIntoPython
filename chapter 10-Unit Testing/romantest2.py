@@ -75,6 +75,7 @@ class KnownValues(unittest.TestCase):
 class ToRomanBadInput(unittest.TestCase):
     def test_too_large(self):
         '''to-roman should fail with large input'''
+        # assertRaises 方法，该方法需要以下参数：你期望的异常、你要测试的方法及传入给方法的参数。
         self.assertRaises(roman2.OutOfRangeError, roman2.to_roman, 4000)
 
 if __name__ == '__main__':
