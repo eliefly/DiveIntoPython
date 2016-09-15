@@ -21,4 +21,6 @@ def plural(noun, rules_filename='plural4-rules.txt'):
     for matches_rule, apply_rule in rules(rules_filename):
         if matches_rule(noun):
             return apply_rule(noun)           
-        raise ValueError('no matching rule for {0}'.format(noun))
+    raise ValueError('no matching rule for {0}'.format(noun))
+
+print(plural('dog'))
